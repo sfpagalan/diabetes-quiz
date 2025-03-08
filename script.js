@@ -167,21 +167,21 @@ function showStatistics() {
     const unhealthyPercentage = Math.round((goodFoodCount / totalFoods) * 100);
 
     statisticsScreen.innerHTML = `
-        <h2>Lifestyle Assessment</h2>
-        <div class="stats-summary">
-            <p><strong>Summary:</strong></p>
-            <p>Good Foods Eliminated: ${goodFoodCount}</p>
-            <p>Bad Foods Eliminated: ${badFoodCount}</p>
-        </div>
-        
-        <p><strong>Your understanding of Type 2 Diabetes is reflected in the chart below, showcasing the impact of your choices on a healthier lifestyle!</strong></p>
-
-        <canvas id="lifestyleChart" width="300" height="300"></canvas>
- 
-        <p>Keep learning and make healthier choices!</p>
-        <button onclick="location.reload()" class="btn">Play Again</button>
-    `;
-
+    <h2>Lifestyle Assessment</h2>
+    <div class="stats-summary">
+        <p><strong>Summary:</strong></p>
+        <p>Good Foods Eliminated: ${goodFoodCount}</p>
+        <p>Bad Foods Eliminated: ${badFoodCount}</p>
+    </div>
+    
+    <p><strong>The chart below reflects how well you understand and manage Type 2 Diabetes based on your choices during the quiz.</strong></p>
+    <p>Your ability to eliminate unhealthy foods while keeping healthy ones shows how informed you are about making the right dietary decisions. The more healthy foods that remain, the better your knowledge of diabetes management. Similarly, eliminating more unhealthy foods indicates a stronger grasp on making healthier choices.</p>
+    
+    <canvas id="lifestyleChart" width="300" height="300"></canvas>
+    
+    <p><strong>Remember:</strong> Consistently making the right choices can significantly impact managing diabetes effectively. Keep learning and strive to improve your lifestyle!</p>
+    <button onclick="location.reload()" class="btn">Play Again</button>
+    
     statisticsScreen.style.display = 'block';
     statisticsScreen.style.marginTop = '20px';
     statisticsScreen.style.border = '2px solid #ff6f61';
